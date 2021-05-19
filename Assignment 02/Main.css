@@ -1,0 +1,16 @@
+p{
+    color: black;
+    font-size: 26px;
+}
+b{
+    text-align: center;
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    
+}
+li:hover{
+    background-color: grey;
+}
+
