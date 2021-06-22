@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Viết chương trình có sử dụng hàm
+
+        Viết chương trình nhập mảng một chiều A với n phần tử
+        
+        (n>=10). Xuất mảng A ra màn hình các nguyên tố trong A trên.</h2>
+</body>
+<script>
+    var array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; 
+
+//tạo hàm checkNumberPrime
+function checkNumber(number){
+    if(number<=1) return false;
+    for(var i = 2;i<=Math.sqrt(number);i++){
+        if(number%i==0) return false;
+    }
+    return true;
+}
+
+//kiểm tra các phần tử trong mang
+for(var i of array){
+    if(checkNumber(i)){
+        console.log(i);
+    }
+}
+</script>
+</html>
